@@ -28,18 +28,20 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
+    - r-blends
     - r-farver
     - r-ggplot2 >=4.0.0
-    - r-glue
     - r-rlang
     - r-scales
+    - r-vctrs
   run:
     - r-base
+    - r-blends
     - r-farver
     - r-ggplot2 >=4.0.0
-    - r-glue
     - r-rlang
     - r-scales
+    - r-vctrs
 
 test:
   commands:
